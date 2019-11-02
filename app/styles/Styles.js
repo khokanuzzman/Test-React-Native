@@ -1,15 +1,15 @@
-import { StyleSheet } from 'react-native';
+import { StyleSheet,Dimensions } from 'react-native';
 
 export default StyleSheet.create({
   container: {
-    flex: 1,
-    borderRadius:10
+    flexDirection:'column',
+    width: Dimensions.get('window').width,
+    height: Dimensions.get('window').height,
   },
+  
   modal: {
     fontSize: 20,
-    backgroundColor:'#4630EB',
     width:'100%',
-    padding:10,
     height:'60%',
     borderColor:'#fff',
     borderWidth: 2,
@@ -18,7 +18,6 @@ export default StyleSheet.create({
     fontSize: 20,
     right:0,
     padding:10,
-    backgroundColor:'red'
   },
   closeIcon:{
     color:'#fff',
@@ -49,7 +48,7 @@ export default StyleSheet.create({
       padding:10,
       textAlign:'center',
       width:'100%',
-      backgroundColor:'rgba(255,255,255,0.5)',
+      backgroundColor:'#fff',
       marginBottom:5,
       alignItems:'center',
       borderWidth:2,
@@ -79,6 +78,170 @@ export default StyleSheet.create({
   modalBackground:{
     flex:1,
     backgroundColor:'rgba(0, 131, 139, 0.8)'
-  }
+  },
+  appoinmentButton:{
+    flex:1,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+
+    elevation: 5,
+  },
+
+  // list
+
+  item: {
+		width: '90%',
+		borderRadius: 20,
+		marginBottom: 10,
+		padding: 10,
+		display: 'flex',
+		flexDirection: 'row',
+		justifyContent: 'center',
+		alignItems: 'center',
+		backgroundColor: '#fff',
+		shadowColor: '#000',
+		shadowOffset: {
+			width: 0,
+			height: 1
+		},
+		shadowOpacity: 0.18,
+		shadowRadius: 1.0,
+		elevation: 1,
+	},
+	info: {
+		flex: 1,
+		borderRadius: 20,
+		paddingLeft: 5,
+		display: 'flex',
+		flexDirection: 'column',
+		justifyContent: 'center',
+		alignItems: 'center',
+	},
+	name: {
+		fontSize: 16,
+		fontWeight: '500',
+		color: '#000',
+		width: '70%',
+		height: 15,
+		marginBottom: 5,
+		borderRadius: 5
+	},
+	brand: {
+		color: '#777',
+		fontSize: 14,
+		backgroundColor: '#e2e2e2',
+		width: '50%',
+		height: 15,
+		marginBottom: 5,
+		borderRadius: 5,
+	},
+	status: {
+		width: '18%',
+		height: '20%',
+		backgroundColor: '#rgba(0, 131, 139, 0.5)',
+		// backgroundColor:'red',
+		position:'absolute',
+		left:0,
+		borderBottomEndRadius:30,
+		paddingRight:3
+	},
+
+
+	card: {
+		width: '100%',
+		height: 150,
+		backgroundColor: '#fff',
+		padding: 10,
+		borderColor: 'rgba(0, 131, 139, 1)',
+		shadowColor: "#000",
+shadowOffset: {
+	width: 0,
+	height: 12,
+},
+shadowOpacity: 0.58,
+shadowRadius: 16.00,
+
+elevation: 24,
+		position: 'relative',
+		marginBottom:20,
+		marginLeft: 20,
+		marginRight:20
+	},
+
+
+	patientName: {
+		padding:0,
+		flexDirection: 'column',
+		marginTop:20,
+		height:30
+	},
+	
+	timePhoneSection: {
+		paddingRight: 15,
+		paddingLeft: 15,
+		paddingTop: 10,
+		flexDirection: 'row',
+		flex: 1,
+	},
+
+
+	button: {
+		flex: 1,
+		flexDirection: 'row',
+		padding: 0,
+		position:'absolute',
+		bottom:0,
+		left:10
+	},
+
+	textColor: {
+		color: '#138294',
+	},
+
+	closeButton: {
+		position: 'absolute',
+		right: -10,
+		top: -22,
+		color: '#fff',
+		fontWeight: 'bold',
+		width: 40,
+		height: 30,
+		textAlign: 'center',
+		backgroundColor: '#rgba(0, 131, 139, 1)',
+		borderBottomLeftRadius: 10,
+	},
+
+
+	patientInfoName:{
+		color:'#000',
+		fontWeight:'normal',
+		letterSpacing:1,
+		fontSize:18,
+		paddingLeft:10
+	},
+	
+	buttonStyle:{
+		flex: 1,
+		margin:5,
+		backgroundColor: '#rgba(70, 179, 148, 1)',
+		padding:10,
+		borderRadius:5,
+		borderColor:'rgba(0, 131, 139, 1)',
+		borderWidth:1,
+		shadowColor: "#000",
+		shadowOffset: {
+			width: 0,
+			height: 2,
+		},
+		shadowOpacity: 0.25,
+		shadowRadius: 2.84,
+		elevation: 5,
+	}
+
 
 });
